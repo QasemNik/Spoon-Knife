@@ -1,17 +1,58 @@
 * {
-  margin:0px;
-  padding:0px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-#octocat {
-  display: block;
-  width:384px;
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 50px auto;
+  max-width: 1500px;
+  padding: 80px;
+  margin: 40px auto;
 }
 
 p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  font: 30px Monaco, "Courier New", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", monospace;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgb(173, 214, 214);
+  background-color: rgb(238, 151, 45);
+  text-align: center;
+}
+.octocat {
+  width: 100px;
+  height: 100px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ff1361;
+}
+.animation {
+  font-weight: 900;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-size: 190px;
+  animation: fade 2s linear infinite;
+}
+@keyframes fade {
+  to {
+    background-position: 200% center;
+  }
 }
